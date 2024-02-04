@@ -81,7 +81,7 @@ function EditUserHome() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#1A2238]">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
         <h2 className="text-2xl font-semibold text-center mb-4">Edit</h2>
         <form onSubmit={handleSubmit}>

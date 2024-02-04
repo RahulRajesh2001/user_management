@@ -68,9 +68,9 @@ function Register() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#1A2238]">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
-        <h2 className="text-2xl font-semibold text-center mb-4">Create a new account</h2>
+        <h2 className="text-2xl font-semibold text-center mb-4">Create A New Account</h2>
         <form onSubmit={handleSubmit}>
           <div className="flex justify-center mb-6">
             <label htmlFor="upload" className={`inline-block bg-gray-200 rounded-full ${imagePreview ? "p-0" : "p-10"} cursor-pointer`}>
@@ -88,26 +88,26 @@ function Register() {
             <label htmlFor="name" className="block text-gray-700 text-sm font-semibold mb-2">
               Full Name *
             </label>
-            <input type="text" id="name" className="htmlForm-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="James Brown" value={name} onChange={(e) => setName(e.target.value)} />
+            <input type="text" id="name" className="htmlForm-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="Rahul Rajesh" value={name} onChange={(e) => setName(e.target.value)} />
           </div>
           <div className="mb-4">
             <label htmlFor="email" className="block text-gray-700 text-sm font-semibold mb-2">
               Email Address *
             </label>
-            <input type="email" id="email" className="htmlForm-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="hello@alignui.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" id="email" className="htmlForm-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="rahulrjev@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div className="mb-6">
             <label htmlFor="password" className="block text-gray-700 text-sm font-semibold mb-2">
               Password *
             </label>
-            <input type="password" id="password" className="htmlForm-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="••••••••" value={password} onChange={(e) => setPassword(e.target.value)} />
-            <p className="text-gray-600 text-xs mt-1">Must contain 1 uppercase letter, 1 number, min. 8 characters.</p>
+            <input type="password" id="password" className="htmlForm-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="********" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <p className="text-gray-600 text-xs mt-1">Must contain 1 uppercase letter, 1 number, minimum characters.</p>
           </div>
           <button type="submit" className="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
             Register
           </button>
           <Link to="/login">
-            <button className="mx-auto flex mt-4 underline">go back to login</button>
+            <button className="mx-auto flex mt-4 underline">Login</button>
           </Link>
         </form>
       </div>
